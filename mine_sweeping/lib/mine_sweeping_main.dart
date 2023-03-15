@@ -308,6 +308,8 @@ class _MineSweepingState extends State<MineSweeping> {
 
   ///游戏计时器
   void startTimer() {
+    //避免切换主题色导致计时跳动
+     _timer?.cancel();
     const duration = Duration(seconds: 1);
     _playTime = 0;
     _timer = Timer.periodic(duration, (timer) {
