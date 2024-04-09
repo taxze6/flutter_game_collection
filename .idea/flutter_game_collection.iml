@@ -9,6 +9,33 @@
       <excludeFolder url="file://$MODULE_DIR$/gomoku/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/gomoku/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/gomoku/build" />
+      <excludeFolder url="file://$MODULE_DIR$/gobang_test/build" />
+      <excludeFolder url="file://$MODULE_DIR$/gobang_test/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/gobang_test/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ai_gomoku/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ai_gomoku/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ai_gomoku/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/gomoku_ai/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/gomoku_ai/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/gomoku_ai/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_dash_doodle_jump/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_dash_doodle_jump/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_dash_doodle_jump/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_basic_video/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
