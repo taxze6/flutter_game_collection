@@ -13,7 +13,7 @@ class World extends ParallaxComponent<FlutterDashDoodleJump> {
       ],
       fill: LayerFill.width,
       repeat: ImageRepeat.repeat,
-      //时差效果
+      // 视差效果
       // baseVelocity: Vector2(0, -5),
       // velocityMultiplierDelta: Vector2(0, 1.2),
     );
