@@ -43,7 +43,7 @@ class Rocket extends PowerUp {
   @override
   Future<void>? onLoad() async {
     await super.onLoad();
-    sprite = await gameRef.loadSprite('game/rocket_1.png');
+    sprite = await gameRef.loadSprite('game/rocket.png');
     size = Vector2(50, 70);
   }
 }

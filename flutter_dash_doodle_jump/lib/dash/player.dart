@@ -14,7 +14,11 @@ class Player extends SpriteGroupComponent<PlayerState>
         KeyboardHandler,
         CollisionCallbacks {
   Player({super.position, this.jumpSpeed = 600})
-      : super(size: Vector2(79, 109), anchor: Anchor.center, priority: 1);
+      : super(
+          size: Vector2(79, 109),
+          anchor: Anchor.center,
+          priority: 1,
+        );
 
   Vector2 velocity = Vector2.zero();
 
@@ -205,7 +209,7 @@ class Player extends SpriteGroupComponent<PlayerState>
     final left = await gameRef.loadSprite('game/dash_left.png');
     final right = await gameRef.loadSprite('game/dash_right.png');
     final center = await gameRef.loadSprite('game/dash_center.png');
-    final rocket = await gameRef.loadSprite('game/rocket_4.png');
+    final rocket = await gameRef.loadSprite('game/rocket.png');
     final hatCenter = await gameRef.loadSprite('game/dash_hat_center.png');
     final hatLeft = await gameRef.loadSprite('game/dash_hat_left.png');
     final hatRight = await gameRef.loadSprite('game/dash_hat_right.png');

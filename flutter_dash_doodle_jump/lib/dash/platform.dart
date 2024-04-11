@@ -95,6 +95,7 @@ class NormalPlatform extends Platform<NormalPlatformState> {
     await super.onLoad();
   }
 }
+
 ///只能跳一下的会破碎的平台
 enum BrokenPlatformState { cracked, broken }
 
@@ -169,6 +170,7 @@ class SpringBoard extends Platform<SpringState> {
     current = SpringState.up;
   }
 }
+
 ///敌人
 enum EnemyPlatformState { only }
 
@@ -178,15 +180,21 @@ class EnemyPlatform extends Platform<EnemyPlatformState> {
   @override
   Future<void> onLoad() async {
     var randBool = Random().nextBool();
-    var enemySprite = randBool ? 'enemy_heart' : 'enemy_error';
+    var enemySprite = randBool ? 'enemy_heart' : 'enemy_e';
 
     sprites = <EnemyPlatformState, Sprite>{
       EnemyPlatformState.only:
-      await gameRef.loadSprite('game/$enemySprite.png'),
+          await gameRef.loadSprite('game/$enemySprite.png'),
     };
 
     current = EnemyPlatformState.only;
 
+    if (enemySprite == "enemy_heart") {
+      size = Vector2(100, 45);
+    } else {
+      //雷电
+      size = Vector2(100, 32);
+    }
     return super.onLoad();
   }
 }
