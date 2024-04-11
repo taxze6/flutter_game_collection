@@ -36,11 +36,11 @@ class ObjectManager extends Component with HasGameRef<FlutterDashDoodleJump> {
 
   //对应关卡出现的道具
   final Map<String, bool> specialPlatforms = {
-    'spring': true, // level 1
-    'broken': false, // level 2
-    'hat': false, // level 3
-    'rocket': false, // level 4
-    'enemy': false, // level 5
+    'spring': true,
+    'broken': false,
+    'hat': false,
+    'rocket': false,
+    'enemy': false,
   };
 
   @override
@@ -66,7 +66,6 @@ class ObjectManager extends Component with HasGameRef<FlutterDashDoodleJump> {
         ),
       );
 
-      // Add Component to Flame tree
       add(platforms[i]);
     }
   }
