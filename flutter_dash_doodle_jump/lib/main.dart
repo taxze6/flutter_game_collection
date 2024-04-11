@@ -40,24 +40,16 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: LayoutBuilder(builder: (context, constraints) {
-          return Container(
-            constraints: const BoxConstraints(
-              maxWidth: 800,
-              minWidth: 550,
-            ),
-            child: GameWidget(
-              game: game,
-              overlayBuilderMap: <String, Widget Function(BuildContext, Game)>{
-                "gameOverlay": (context, game) => GameOverlay(game: game),
-                "mainMenuOverlay": (context, game) =>
-                    MainMenuOverlay(game: game),
-                "gameOverOverlay": (context, game) =>
-                    GameOverOverlay(game: game),
-              },
-            ),
-          );
-        }),
+        child: GameWidget(
+          game: game,
+          overlayBuilderMap: <String, Widget Function(BuildContext, Game)>{
+            "gameOverlay": (context, game) => GameOverlay(game: game),
+            "mainMenuOverlay": (context, game) =>
+                MainMenuOverlay(game: game),
+            "gameOverOverlay": (context, game) =>
+                GameOverOverlay(game: game),
+          },
+        ),
       ),
     );
   }

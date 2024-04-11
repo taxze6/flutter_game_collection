@@ -91,6 +91,12 @@ class FlutterDashDoodleJump extends FlameGame
     overlays.remove('mainMenuOverlay');
   }
 
+  void addPlayer() {
+    player = Player();
+    player.setJumpSpeed(levelManager.jumpSpeed);
+    add(player);
+  }
+
   ///再来一次
   void resetGame() {
     startGame();
@@ -103,11 +109,6 @@ class FlutterDashDoodleJump extends FlameGame
     overlays.add('mainMenuOverlay');
   }
 
-  void addPlayer() {
-    player = Player();
-    player.setJumpSpeed(levelManager.jumpSpeed);
-    add(player);
-  }
 
   void initializeGameStart() {
     //重新计分

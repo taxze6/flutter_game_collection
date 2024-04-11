@@ -13,8 +13,14 @@ class ScoreDisplay extends StatelessWidget {
     return ValueListenableBuilder(
       valueListenable: (game as FlutterDashDoodleJump).gameManager.score,
       builder: (context, value, child) {
-        return Text('Score: $value',
-            style: Theme.of(context).textTheme.displaySmall!);
+        return Text(
+          'Score: $value',
+          style: TextStyle(
+            fontSize: 42,
+            fontWeight: FontWeight.w800,
+            fontFamily: "DaveysDoodleface",
+          ),
+        );
       },
     );
   }

@@ -17,15 +17,6 @@ class _MainMenuOverlayState extends State<MainMenuOverlay> {
   @override
   Widget build(BuildContext context) {
     FlutterDashDoodleJump game = widget.game as FlutterDashDoodleJump;
-
-    return LayoutBuilder(builder: (context, constraints) {
-      final TextStyle titleStyle = (constraints.maxWidth > 830)
-          ? Theme.of(context).textTheme.displayLarge!
-          : Theme.of(context).textTheme.displaySmall!;
-
-      // 760是浏览器可以设置的最小高度
-      final bool screenHeightIsSmall = constraints.maxHeight < 760;
-
       return Material(
         child: Stack(
           children: [
@@ -70,7 +61,6 @@ class _MainMenuOverlayState extends State<MainMenuOverlay> {
                         const WhiteSpace(
                           height: 20,
                         ),
-                        if (!screenHeightIsSmall) const WhiteSpace(height: 30),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -91,7 +81,6 @@ class _MainMenuOverlayState extends State<MainMenuOverlay> {
                             ),
                           ],
                         ),
-                        if (!screenHeightIsSmall) const WhiteSpace(height: 50),
                         Center(
                           child: ElevatedButton(
                             onPressed: () async {
@@ -123,7 +112,6 @@ class _MainMenuOverlayState extends State<MainMenuOverlay> {
           ],
         ),
       );
-    });
   }
 }
 
