@@ -12,8 +12,11 @@ class EnemyLeft1 extends Fish {
     Offset? size,
     double? speed,
   }) : super(
-          offset: Offset(-45,
-              (Random().nextInt(GlobalData.screenHeight.toInt() - 100) + 100)),
+          offset: Offset(
+              -45,
+              (Random()
+                  .nextInt(GlobalData.screenHeight.toInt() - 69)
+                  .toDouble())),
           size: const Offset(45, 69),
           speed: 10,
           score: 1,

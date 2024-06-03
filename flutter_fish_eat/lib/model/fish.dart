@@ -24,3 +24,11 @@ abstract class Fish {
 
   drawFish();
 }
+
+double dirData(Dir dir) {
+  if (dir == Dir.left) {
+    return 1;
+  } else {
+    return -1;
+  }
+}

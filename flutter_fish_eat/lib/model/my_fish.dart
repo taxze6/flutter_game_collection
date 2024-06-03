@@ -33,8 +33,8 @@ class MyFish extends Fish {
   drawFish() {
     return Image.asset(
       img!,
-      width: size?.dx,
-      height: size?.dy,
+      width: size!.dx * level,
+      height: size!.dy * level,
     );
   }
 
